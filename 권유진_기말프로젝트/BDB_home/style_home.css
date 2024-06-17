@@ -1,0 +1,124 @@
+body {
+    min-width: 1200px; /* 최소 너비 설정 */
+    max-width: 1450px; /* 최대 너비 설정 */
+    margin: 0 auto; /* 중앙 정렬 */
+}
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.container {
+    background-color: rgb(227, 255, 235);
+    min-width: 1300px; /* 고정된 너비 설정 제거 */
+    max-width: 1450px; /* 최대 너비 설정 */
+    display: flex; /* Flexbox 레이아웃 사용 */
+    align-items: center; /* 수직 정렬 */
+    flex-direction: row;
+}
+
+#logo_img {
+    width: 150px; /* 로고 이미지 너비 설정 */
+    height: auto; /* 비율에 맞게 높이 자동 설정 */
+    margin-left: 20px;
+}
+
+.navbar-nav {
+    display: flex !important; /* !important를 사용하여 우선순위 설정 */
+    flex-direction: row !important;
+    gap: 20px !important;
+    margin: 20px;
+    flex-grow: 0;
+}
+
+.navbar-nav .nav-link {
+    white-space: nowrap; /* 메뉴 항목이 줄 바꿈되지 않도록 설정 */
+
+}
+
+#main_img {
+    min-width: 1200px; /* 단위 추가 */
+    max-width: 1450px; /* 단위 추가 */
+    height: 500px;
+    margin: 0 auto;
+    margin-bottom: 10px;
+}
+
+.content-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.content-box header h3 {
+    margin: 10px 0;
+}
+
+.content-box header h6 {
+    margin-bottom: 20px;
+    color: grey;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: 300px;
+    padding: 20px;
+    text-align: left;
+}
+
+.card figure {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.card figure img {
+    width: 100%;
+    height: auto;
+}
+
+.triangle-btn {
+    width: 0px;
+    height: 0px;
+    border-left: 25px solid #666666;
+    border-top: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+}
+
+#today_sort{
+    margin: 50px;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#foot ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#foot ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#foot ul li a {
+    color: #000;
+    text-decoration: none;
+}
