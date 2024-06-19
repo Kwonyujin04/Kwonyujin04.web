@@ -1,0 +1,134 @@
+body {
+    min-width: 1200px; 
+    max-width: 1450px; 
+    margin: 0 auto; 
+}
+
+header {
+    width: 100%;
+}
+
+.navbar {
+    width: 100%;
+}
+
+.container {
+    background-color: rgb(227, 255, 235);
+    min-width: 1300px; 
+    max-width: 1450px; 
+    display: flex; 
+    position: relative;
+    align-items: center; 
+    flex-direction: row;
+}
+
+#logo_img {
+    width: 150px; 
+    height: auto; 
+    margin-left: 20px;
+}
+
+.navbar-nav {
+    display: flex !important;
+    flex-direction: row !important;
+    gap: 20px !important;
+    position: absolute;
+    left: 230px;
+    top: 40px;
+}
+
+.content-box {
+    text-align: center;
+    padding: 20px;
+}
+
+.select-box{
+    text-align: center;
+    padding: 20px;
+}
+
+header h3{
+    margin: 20px;
+    margin-top: 30px;
+}
+
+#wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.select-box #wrapper .card{
+    position: relative;
+    border: 1px solid #ffffff;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(20% - 30px);
+    margin: 5px;
+    padding: 15px;
+    padding-bottom: 40px;
+    text-align: left;
+    box-sizing: border-box;
+}
+
+.select-box #wrapper .card figure {
+    margin: 10px;
+    padding: 0;
+    text-align: center;
+}
+
+.select-box #wrapper .card figure img {
+    width: 150px;
+    height: auto;
+    border-radius: 50%;
+    transition: transform 0.3s ease;
+}
+
+.select-box #wrapper .card h4 {
+    margin: 0 auto;
+}
+
+.content-box #wrapper .card{
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    overflow: hidden;
+    width: calc(33.333% - 40px); /* 3개의 카드가 한 줄에 들어가도록 설정, 양쪽 간격 고려 */
+    margin: 10px;
+    padding: 20px;
+    text-align: left;
+    box-sizing: border-box; 
+}
+
+.content-box #wrapper .card figure {
+    margin: 0px;
+    padding: 0;
+    text-align: center;
+}
+
+.content-box #wrapper .card figure img {
+    width: 100%;
+    height: auto;
+}
+
+footer {
+    background-color: #f8f9fa;
+    padding: 20px 0;
+    text-align: center;
+}
+
+#foot ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+#foot ul li {
+    display: inline;
+    margin: 0 10px;
+}
+
+#foot ul li a {
+    color: #000;
+    text-decoration: none;
+}
