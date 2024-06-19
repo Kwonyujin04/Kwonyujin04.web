@@ -1,7 +1,7 @@
 body {
-    min-width: 1200px; /* 최소 너비 설정 */
-    max-width: 1450px; /* 최대 너비 설정 */
-    margin: 0 auto; /* 중앙 정렬 */
+    min-width: 1200px; 
+    max-width: 1450px; 
+    margin: 0 auto; 
 }
 
 header {
@@ -14,25 +14,27 @@ header {
 
 .container {
     background-color: rgb(227, 255, 235);
-    min-width: 1300px; /* 고정된 너비 설정 제거 */
-    max-width: 1450px; /* 최대 너비 설정 */
-    display: flex; /* Flexbox 레이아웃 사용 */
-    align-items: center; /* 수직 정렬 */
+    min-width: 1300px; 
+    max-width: 1450px; 
+    display: flex; 
+    position: relative;
+    align-items: center; 
     flex-direction: row;
 }
 
 #logo_img {
-    width: 150px; /* 로고 이미지 너비 설정 */
-    height: auto; /* 비율에 맞게 높이 자동 설정 */
+    width: 150px; 
+    height: auto; 
     margin-left: 20px;
 }
 
 .navbar-nav {
-    display: flex !important; /* !important를 사용하여 우선순위 설정 */
+    display: flex !important;
     flex-direction: row !important;
     gap: 20px !important;
-    margin: 20px;
-    flex-grow: 0;
+    position: absolute;
+    left: 230px;
+    top: 40px;
 }
 
 .navbar-nav .nav-link {
@@ -73,10 +75,13 @@ header {
     border: 1px solid #ddd;
     border-radius: 10px;
     overflow: hidden;
-    width: 300px;
+    width: calc(33.333% - 40px); /* 3개의 카드가 한 줄에 들어가도록 설정, 양쪽 간격 고려 */
+    margin: 10px;
     padding: 20px;
     text-align: left;
+    box-sizing: border-box; 
 }
+
 
 .card figure {
     margin: 0;
@@ -92,7 +97,7 @@ header {
 .triangle-btn {
     width: 0px;
     height: 0px;
-    border-left: 25px solid #666666;
+    border-left: 25px solid gray;
     border-top: 15px solid transparent;
     border-bottom: 15px solid transparent;
 }
