@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Birth Day Buddy_present_main</title> 
+    <link rel="stylesheet" href="style_home.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <header id="top_header">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/BDB_home/index_home.html">
+                    <img id="logo_img" src="이미지/BDB_logo.png" alt="logo">
+                </a>
+                <div class="navbar-nav">
+                    <li><a class="nav-link" id="menu_link" href="/BDB_about_team/index_about_team.html">BDB소개</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/BDB_community/index_community.html">BDB Community</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/BDB_present_main/index_present_main.html">선물추천</a>
+                    </li>
+                    <li>
+                        <a id="loginBtn" class="nav-link" href="/BDB_login/index_login.html">로그인</a>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div id="main_img">
+        <div id="carouselExampleAutoplaying" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="이미지/홈이미지_생일_축하.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="이미지/홈이미지_팬_생일축하.png" class="d-block w-100" alt="...">
+                </div>
+                <div class="carousel-item">
+                    <img src="이미지/홈이미지_왜_안왔어요.png" class="d-block w-100" alt="...">
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleAutoplaying" data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+        <div id="fairyImg">
+            <img src="이미지/BDB_secret_fairy.png" alt="fairy" onclick="goToLink('\BDB_secret\index_secret.html')">
+        </div>
+    </div>
+    <div class="content-box">
+        <header>
+            <h3>오늘의 Birth Day Buddy</h3>
+            <h6>pickup</h6>
+        </header>
+        <div id="wrapper">
+            <div class="card">
+                <figure>
+                    <img src="이미지/생일파티_어린이.PNG" alt="img1">
+                </figure>
+                <p>오늘 제 소중한 동생의 생일이에요. 생일 축하해! 그리고 다음달은 내 생일이니까 기대할게~</p>
+				<div class="triangle-btn" onclick="goToLink('\BDB_community\index_community.html')"></div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="이미지/생일파티_어른.PNG" alt="img1">
+                </figure>
+                <p>친구와 생일파티를 하는 건 초등학생 이후 처음이네, 정말 고마워. 케이크도 4시간이나 웨이팅해서 사오... 더보기</p>
+				<div class="triangle-btn" onclick="goToLink('\BDB_community\index_community.html')"></div>
+            </div>
+            <div class="card">
+                <figure>
+                    <img src="이미지/소시지바비큐.PNG" alt="img1">
+                </figure>
+                <p>HAMS PARTY에서 준비한 생일선물을 받아가세요! 6월생 동반시 디너가 최대 30%할인 특별한 추억을 만들... 더보기</p>
+				<div class="triangle-btn" onclick="goToLink('/BDB_present_main/index_present_main.html')"></div>
+			</div>
+        </div>
+		<div id="today_sort">
+			<h2>오늘은 <span id="date"></span> 입니다. 235명의 생일을 축하해 주세요!</h2>
+		</div>
+    </div>
+    <footer>
+        <nav id="foot">
+            <ul>
+                <li><a href="#">권유진</a></li>
+                <li><a href="#">2310867@sookmyung.ac.kr</a></li>
+                <li><a href="#">010-0000-0000</a></li>
+                <li><a href="#">서울특별시 용산구 청파로47길 100</a></li>
+            </ul>
+        </nav>    
+    </footer>
+    
+	<script src="script_home.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>

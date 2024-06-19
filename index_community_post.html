@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="utf-8">
+    <title>Birth Day Buddy_present_main</title> 
+    <link rel="stylesheet" href="style_community_post.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+</head>
+<body>
+    <header id="top_header">
+        <nav class="navbar navbar-light bg-light">
+            <div class="container">
+                <a class="navbar-brand" href="/BDB_home/index_home.html">
+                    <img id="logo_img" src="이미지/BDB_logo.png" alt="logo">
+                </a>
+                <div class="navbar-nav">
+                    <li><a class="nav-link" id="menu_link" href="/BDB_about_team/index_about_team.html">BDB소개</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/BDB_community/index_community.html">BDB Community</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/BDB_present_main/index_present_main.html">선물추천</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="/BDB_login/index_login.html">로그인</a>
+                    </li>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="content-box">
+        <div class="back-btn" onclick="goToLink('\BDB_community\index_community.html')"></div>
+        <div class="title">
+            <h3>강은서님의 글</h3>
+            <p>2024.06.19</p></div>
+        <figure>
+            <img src="이미지/생일파티_어른.PNG" alt="img1">
+        </figure>
+        <p>친구와 생일파티를 하는 건 초등학생 이후 처음이네, 정말 고마워. 케이크도 4시간이나 웨이팅해서 사오다니 대박이다!! 날 위해 그렇게 해줄 수 있는 게 감동이야~ 너희 생일때도 열심히 준비해야겠다!</p>
+        <p class="to_name">강은서가</p>
+    </div>
+    <div class="comment-section">
+        <div class="comment-form">
+            <textarea id="commentInput" placeholder="댓글을 입력하세요"></textarea>
+            <button onclick="addComment()">댓글 달기</button>
+        </div>
+        <div class="comment-list" id="commentList"></div>
+    </div>
+    <footer>
+        <nav id="foot">
+            <ul>
+                <li><a href="#">권유진</a></li>
+                <li><a href="#">2310867@sookmyung.ac.kr</a></li>
+                <li><a href="#">010-0000-0000</a></li>
+                <li><a href="#">서울특별시 용산구 청파로47길 100</a></li>
+            </ul>
+        </nav>    
+    </footer>
+    
+	<script src="script_community_post.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+</body>
+</html>
